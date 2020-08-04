@@ -20,7 +20,7 @@ const UpdateStack = props => {
       screenOptions={{
         headerTintColor: 'white',
         headerStyle: {
-          backgroundColor: globalStyles.lightBlue,
+          backgroundColor: Colors.LIGHT_BLUE,
           height: 58,
         },
       }}
