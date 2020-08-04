@@ -204,6 +204,10 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     width: 55,
   },
+
+  updateScroll: {
+    color: 'white',
+  }
 });
 
 export default Home;
