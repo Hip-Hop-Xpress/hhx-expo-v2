@@ -8,6 +8,15 @@ const globalStyles = StyleSheet.create({
   illiniBlue: {
     backgroundColor: Colors.ILLINI_BLUE,
   },
+  lightBlue: {
+    backgroundColor: Colors.LIGHT_BLUE,
+  },
+  mediumBlue: {
+    backgroundColor: Colors.MEDIUM_BLUE,
+  },
+  white: {
+    backgroundColor: Colors.WHITE,
+  },
 });
 
 export default globalStyles;

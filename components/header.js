@@ -4,12 +4,12 @@ import globalStyles from '../styles/global';
 
 export default function Header() {
   return (
-    <View style={globalStyles.illiniBlue}>
-      <Image
+    <View style={globalStyles.lightBlue}>
+      {/* <Image
         style={styles.logo}
         resizeMode="cover"
         source={require('../assets/images/hhx_logo_transparent.png')}
-      />
+      /> */}
     </View>
   );
 }

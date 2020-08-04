@@ -11,7 +11,6 @@ import ArtistHistories from '../screens/history/artistHistoryScreen';
 import ArtistHistory from '../screens/history/artistHistory';
 import Variations from '../screens/history/variationsScreen';
 import Variation from '../screens/history/variation';
-
 import strings from '../assets/strings';
 import * as Colors from '../styles/colors';
 
@@ -135,6 +134,16 @@ const UpdateStack = props => {
           headerTitle: strings.variations.title,
         }}
       />
+
+      {/* Tester Main Screen
+      <Stack.Screen
+        name="Tester"
+        component={Tester}
+        options={{
+          ...nonLandingScreenOptions,
+          headerTitle: strings.variations.title,
+        }}
+      /> */}
 
     </Stack.Navigator>
   );

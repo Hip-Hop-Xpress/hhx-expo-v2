@@ -39,7 +39,7 @@ const Home = ({navigation}) => {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView style={globalStyles.illiniBlue}>
+      <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
@@ -110,6 +110,9 @@ const Home = ({navigation}) => {
                 title={strings.variations.title}
                 screenName={strings.variations.screenName}  
               />
+
+              
+
             </View>
 
             {/* Social Media Section */}
