@@ -62,7 +62,7 @@ const Map = () => {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView style={globalStyles.illiniBlue}>
+      <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
         <ScrollView 
           contentInsetAdjustmentBehavior="automatic"
