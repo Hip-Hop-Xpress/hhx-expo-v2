@@ -13,8 +13,8 @@ import * as Fonts from '../styles/fonts';
 const NavigationButton = ({navigation, title, screenName}) => {
   return (
     <TouchableOpacity
-      style={[styles.navButton, globalStyles.illiniBlue]}
-      activeOpacity={0.75}
+      style={[styles.navButton, globalStyles.transparent]}
+      activeOpacity={0.8}
       onPress={
         () => {navigation.navigate(screenName, {
           navigation: navigation,
