@@ -23,7 +23,7 @@ const ProjectComponent = ({name, description, members, startDate, endDate, icon,
   return (
     <>
       <TouchableOpacity
-        style={[styles.container, globalStyles.illiniOrange]}
+        style={[styles.container, globalStyles.transparent]}
         onPress={setSelected}
         activeOpacity={0.75}>
         <MaterialCommunityIcons name={icon} color={'white'} size={65} />
@@ -59,10 +59,11 @@ const ProjectComponent = ({name, description, members, startDate, endDate, icon,
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 28,
-    marginVertical: 2,
+    marginVertical: 5,
     paddingHorizontal: 10,
     paddingVertical: 20,
     alignItems: 'center',
+    borderRadius: 20,
   },
   projectName: {
     fontFamily: Fonts.KARLA_REGULAR,
@@ -74,26 +75,32 @@ const styles = StyleSheet.create({
   projectInfo: {
     marginVertical: 15,
     marginHorizontal: 20,
+    paddingHorizontal: 10,
+
   },
   projectTitle: {
     fontFamily: Fonts.MONTSERRAT_BLACK,
     fontSize: 22,
     textAlign: 'center',
+    color: 'white',
   },
   members: {
     fontFamily: Fonts.KARLA_BOLDITALIC,
     fontSize: 18,
     marginBottom: 10,
+    color: 'white',
   },
   dateText: {
     fontFamily: Fonts.KARLA_REGULAR,
     fontSize: 17,
     textAlign: 'center',
     marginBottom: 15,
+    color: 'white',
   },
   projectText: {
     fontFamily: Fonts.KARLA_REGULAR,
     fontSize: 16,
+    color: 'white',
   },
 });
 
