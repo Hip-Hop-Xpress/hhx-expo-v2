@@ -24,7 +24,7 @@ const Updates = ({navigation}) => {
         <Header />
         <LinearGradient
             // Background Linear Gradient
-            colors={['rgba(0, 225, 255, 1)', 'rgba(0, 145, 255, 1)']}
+            colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
             style={{
               position: 'absolute',
               left: 0,

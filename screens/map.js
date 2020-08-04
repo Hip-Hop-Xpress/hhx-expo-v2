@@ -28,7 +28,7 @@ import {UIUC_LOCATION, COORDS, CONTACTS} from '../api/constants/mapConstants';
 // Styles
 import globalStyles from '../styles/global';
 import * as Fonts from '../styles/fonts';
-import { ILLINI_BLUE, TRANSPARENT } from '../styles/colors';
+import { LIGHT_MEDIUM_BLUE_GRADIENT, TRANSPARENT } from '../styles/colors';
 
 const arcgisMapUrl = 'https://www.arcgis.com/apps/MapJournal/index.html?appid=5147c188b9664d00bdc88842b8ae4139';
 
@@ -67,7 +67,7 @@ const Map = () => {
         <Header />
         <LinearGradient
             // Background Linear Gradient
-            colors={['rgba(0, 225, 255, 1)', 'rgba(0, 145, 255, 1)']}
+            colors={LIGHT_MEDIUM_BLUE_GRADIENT}
             style={{
               position: 'absolute',
               left: 0,

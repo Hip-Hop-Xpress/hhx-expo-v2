@@ -10,5 +10,6 @@ export const LIGHT_BLUE   = 'rgba(0, 225, 255, 1)';
 export const MEDIUM_BLUE = 'rgba(0, 145, 255, 1)';
 export const WHITE = 'rgba(255, 255, 255, 1)';
 export const TRANSPARENT = 'rgba(255, 255, 255, 0.5)';
+export const LIGHT_MEDIUM_BLUE_GRADIENT = [LIGHT_BLUE, MEDIUM_BLUE];
 
 export const BOTTOM_NAVIGATOR_INACTIVE = '#FFCC96';
