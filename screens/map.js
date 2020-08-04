@@ -28,7 +28,7 @@ import {UIUC_LOCATION, COORDS, CONTACTS} from '../api/constants/mapConstants';
 // Styles
 import globalStyles from '../styles/global';
 import * as Fonts from '../styles/fonts';
-import { ILLINI_BLUE } from '../styles/colors';
+import { ILLINI_BLUE, TRANSPARENT } from '../styles/colors';
 
 const arcgisMapUrl = 'https://www.arcgis.com/apps/MapJournal/index.html?appid=5147c188b9664d00bdc88842b8ae4139';
 
@@ -115,7 +115,7 @@ const Map = () => {
             <Text style={styles.bodyText}>
                 {strings.maps.storyMapDesc}
             </Text>
-
+            <View style={styles.navButtonView}>
             <TouchableOpacity 
               style={styles.navButton} 
               onPress={() => {
@@ -126,6 +126,7 @@ const Map = () => {
                 {strings.maps.storyMapTitle}
               </Text>
             </TouchableOpacity>
+            </View>
             
             <View style={styles.contactContainer}>
               {/* Request */}
@@ -153,6 +154,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontSize: 32,
     textAlign: 'center',
+    color: 'white',
   },
   bodyText: {
     fontFamily: Fonts.KARLA_REGULAR,
@@ -160,6 +162,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
     fontSize: 16,
     marginBottom: 30,
+    color: 'white',
   },
   body: {
     marginBottom: 40,
@@ -182,7 +185,8 @@ const styles = StyleSheet.create({
   navButton: {
     paddingVertical: 15,
     marginVertical: 2,
-    backgroundColor: ILLINI_BLUE
+    backgroundColor: TRANSPARENT,
+    borderRadius: 20,
   },
   navButtontext: {
     fontFamily: Fonts.MONTSERRAT_BLACK,
@@ -192,7 +196,10 @@ const styles = StyleSheet.create({
   },
   contactContainer: {
     marginVertical: 25
-  }
+  },
+  navButtonView: {
+    paddingHorizontal: 20,
+  },
 });
 
 export default Map;
