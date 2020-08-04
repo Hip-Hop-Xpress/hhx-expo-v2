@@ -189,6 +189,7 @@ const styles = StyleSheet.create({
   },
   navigationSection: {
     marginVertical: 20,
+    paddingHorizontal: 20,
   },
   navButton: {
     paddingVertical: 15,

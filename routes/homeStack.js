@@ -34,9 +34,9 @@ const UpdateStack = props => {
       gesturesEnabled={true}
       gestureResponseDistance={responseDistance}
       screenOptions={{
-        headerTintColor: Colors.LIGHT_BLUE,
+        headerTintColor: 'white',
         headerStyle: {
-          backgroundColor: Colors.ILLINI_BLUE,
+          backgroundColor: Colors.LIGHT_BLUE,
           height: 58,
         },
       }}

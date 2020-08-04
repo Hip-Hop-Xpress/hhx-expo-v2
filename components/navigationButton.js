@@ -27,8 +27,11 @@ const NavigationButton = ({navigation, title, screenName}) => {
 
 const styles = StyleSheet.create({
   navButton: {
-    paddingVertical: 15,
-    marginVertical: 2,
+    marginVertical: 5,
+    paddingHorizontal: 12,
+    paddingTop: 12,  // 12
+    paddingBottom: 20,  // 20
+    borderRadius: 20,
   },
   navButtontext: {
     fontFamily: Fonts.MONTSERRAT_BLACK,
