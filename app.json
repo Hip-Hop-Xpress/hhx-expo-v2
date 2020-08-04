@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "hhx-expo",
+    "slug": "hhx-expo",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/images/hhx_logo_transparent.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#13294B"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "description": "Mobile app for the UIUC Hip Hop Xpress",
+    "githubUrl": "https://github.com/Hip-Hop-Xpress/hhx-expo"
+  }
+}
