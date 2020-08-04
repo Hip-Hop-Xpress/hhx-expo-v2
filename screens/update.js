@@ -24,8 +24,8 @@ const Update = props => {
   let bodyKey = 0;
   return (
     <>
-      <StatusBar barStyle="light-content"/>
-      <SafeAreaView style={globalStyles.illiniOrange}>
+      <StatusBar barStyle="light-content" backgroundColor='#00E1FF' />
+      <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
         <LinearGradient
             // Background Linear Gradient

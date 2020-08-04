@@ -19,7 +19,7 @@ import * as Colors from '../styles/colors';
 const Updates = ({navigation}) => {
   return (
     <>
-      <StatusBar barStyle="default-content" />
+      <StatusBar barStyle="light-content" />
       <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
         <LinearGradient

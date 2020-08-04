@@ -133,7 +133,7 @@ const screen = Dimensions.get('screen');
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: Colors.ILLINI_BLUE,
+    backgroundColor: Colors.LIGHT_BLUE,
   },
   topImage: {
     position: 'absolute',
