@@ -7,7 +7,7 @@ import * as Fonts from '../styles/fonts';
 const UpdateComponent = props => {
   const update = (
     <TouchableOpacity
-      activeOpacity={0.75}
+      activeOpacity={0.8}
       onPress={
         // Send props to screen in stack
         () =>
@@ -19,7 +19,7 @@ const UpdateComponent = props => {
             lastUpdated: props.lastUpdated
           })
       }>
-      <View style={[styles.updateContainer, globalStyles.illiniOrange]}>
+      <View style={[styles.updateContainer, globalStyles.transparent]}>
         <Text style={styles.updateTitle}>{props.title}</Text>
         <Text style={styles.updateAuthor}>{props.author}</Text>
         <Text style={styles.updateDate}>{props.date}</Text>
@@ -32,10 +32,11 @@ const UpdateComponent = props => {
 
 const styles = StyleSheet.create({
   updateContainer: {
-    marginVertical: 1,
+    marginVertical: 5,
     paddingHorizontal: 12,
     paddingTop: 12,  // 12
     paddingBottom: 20,  // 20
+    borderRadius: 20,
   },
   updateTitle: {
     fontFamily: Fonts.KARLA_REGULAR,

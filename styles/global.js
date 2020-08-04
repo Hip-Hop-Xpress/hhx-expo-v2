@@ -17,6 +17,9 @@ const globalStyles = StyleSheet.create({
   white: {
     backgroundColor: Colors.WHITE,
   },
+  transparent: {
+    backgroundColor: Colors.TRANSPARENT,
+  },
 });
 
 export default globalStyles;
