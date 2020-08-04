@@ -12,7 +12,7 @@ const UpdateStack = props => {
 
   return (
     <Stack.Navigator
-      initialRouteName="Voting"
+      initialRouteName="Updates"
       headerMode="screen"
       mode="card"
       gesturesEnabled={true}
@@ -29,7 +29,7 @@ const UpdateStack = props => {
       {/* TODO: CHANGE NAME OF VOTING TO UPDATES */}
       {/* Updates Screen */}
       <Stack.Screen
-        name="Voting"
+        name="Updates"
         component={Updates}
         options={{
           gestureDirection: 'horizontal',
@@ -48,6 +48,7 @@ const UpdateStack = props => {
           gestureDirection: 'horizontal',
           gestureResponseDistance: responseDistance,
           gestureEnabled: true,
+          headerShown: true,
         }}
       />
       
