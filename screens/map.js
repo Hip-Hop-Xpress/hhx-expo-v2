@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import { RefreshControl } from 'react-native';
 import {
   SafeAreaView,
@@ -64,6 +65,17 @@ const Map = () => {
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
+        <LinearGradient
+            // Background Linear Gradient
+            colors={['rgba(0, 225, 255, 1)', 'rgba(0, 145, 255, 1)']}
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: 0,
+              height: 1000,
+            }}
+        />
         <ScrollView 
           contentInsetAdjustmentBehavior="automatic"
           refreshControl={
@@ -150,7 +162,6 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   body: {
-    backgroundColor: 'white',
     marginBottom: 40,
     paddingBottom: 40,
   },
