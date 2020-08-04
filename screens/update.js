@@ -9,6 +9,7 @@ import {
   StatusBar,
 } from 'react-native';
 
+import Header from '../components/header';
 import globalStyles from '../styles/global';
 import * as Fonts from '../styles/fonts';
 import * as Colors from '../styles/colors';
@@ -23,8 +24,9 @@ const Update = props => {
   let bodyKey = 0;
   return (
     <>
-      <StatusBar barStyle="light-content" />
-      <SafeAreaView style={styles.screen}>
+      <StatusBar barStyle="light-content"/>
+      <SafeAreaView style={globalStyles.lightBlue}>
+        <Header />
         <LinearGradient
             // Background Linear Gradient
             colors={['rgba(0, 225, 255, 1)', 'rgba(0, 145, 255, 1)']}
@@ -35,7 +37,7 @@ const Update = props => {
               top: 0,
               height: 1000,
             }}
-          />
+        />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic">
           {/* Screen body */}

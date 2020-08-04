@@ -20,7 +20,7 @@ const Updates = ({navigation}) => {
   return (
     <>
       <StatusBar barStyle="default-content" />
-      <SafeAreaView style={{backgroundColor: Colors.ILLINI_BLUE}}>
+      <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
         <LinearGradient
             // Background Linear Gradient
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     fontSize: 30,
     textAlign: 'center',
+    color: 'white',
   },
   introText: {
     fontFamily: Fonts.KARLA_BOLDITALIC,
