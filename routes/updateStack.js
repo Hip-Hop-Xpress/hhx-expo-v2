@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Updates from '../screens/updates';
 import Update from '../screens/update';
 import * as Colors from '../styles/colors';
+import globalStyles from '../styles/global';
 
 const Stack = createStackNavigator();
 
@@ -19,7 +20,7 @@ const UpdateStack = props => {
       screenOptions={{
         headerTintColor: 'white',
         headerStyle: {
-          backgroundColor: Colors.ILLINI_BLUE,
+          backgroundColor: globalStyles.lightBlue,
           height: 58,
         },
       }}

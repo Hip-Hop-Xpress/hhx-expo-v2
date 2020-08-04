@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import { RefreshControl } from 'react-native';
 import {
   SafeAreaView,
@@ -27,7 +28,7 @@ import {UIUC_LOCATION, COORDS, CONTACTS} from '../api/constants/mapConstants';
 // Styles
 import globalStyles from '../styles/global';
 import * as Fonts from '../styles/fonts';
-import { ILLINI_BLUE } from '../styles/colors';
+import { ILLINI_BLUE, TRANSPARENT } from '../styles/colors';
 
 const arcgisMapUrl = 'https://www.arcgis.com/apps/MapJournal/index.html?appid=5147c188b9664d00bdc88842b8ae4139';
 
@@ -62,8 +63,19 @@ const Map = () => {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView style={globalStyles.illiniBlue}>
+      <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
+        <LinearGradient
+            // Background Linear Gradient
+            colors={['rgba(0, 225, 255, 1)', 'rgba(0, 145, 255, 1)']}
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: 0,
+              height: 1000,
+            }}
+        />
         <ScrollView 
           contentInsetAdjustmentBehavior="automatic"
           refreshControl={
@@ -103,7 +115,7 @@ const Map = () => {
             <Text style={styles.bodyText}>
                 {strings.maps.storyMapDesc}
             </Text>
-
+            <View style={styles.navButtonView}>
             <TouchableOpacity 
               style={styles.navButton} 
               onPress={() => {
@@ -114,6 +126,7 @@ const Map = () => {
                 {strings.maps.storyMapTitle}
               </Text>
             </TouchableOpacity>
+            </View>
             
             <View style={styles.contactContainer}>
               {/* Request */}
@@ -141,6 +154,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontSize: 32,
     textAlign: 'center',
+    color: 'white',
   },
   bodyText: {
     fontFamily: Fonts.KARLA_REGULAR,
@@ -148,9 +162,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
     fontSize: 16,
     marginBottom: 30,
+    color: 'white',
   },
   body: {
-    backgroundColor: 'white',
     marginBottom: 40,
     paddingBottom: 40,
   },
@@ -165,12 +179,14 @@ const styles = StyleSheet.create({
   },
   mapStyle: {
     height: 400,
-    width: '100%',
+    width: '90%',
+    borderRadius: 20,
   },
   navButton: {
     paddingVertical: 15,
     marginVertical: 2,
-    backgroundColor: ILLINI_BLUE
+    backgroundColor: TRANSPARENT,
+    borderRadius: 20,
   },
   navButtontext: {
     fontFamily: Fonts.MONTSERRAT_BLACK,
@@ -180,7 +196,10 @@ const styles = StyleSheet.create({
   },
   contactContainer: {
     marginVertical: 25
-  }
+  },
+  navButtonView: {
+    paddingHorizontal: 20,
+  },
 });
 
 export default Map;

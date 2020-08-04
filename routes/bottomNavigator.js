@@ -24,9 +24,9 @@ function AppTabs() {
     <Tab.Navigator
       initialRouteName="Home"
       activeColor={Colors.ILLINI_ORANGE}
-      inactiveColor={Colors.BOTTOM_NAVIGATOR_INACTIVE}
+      inactiveColor={Colors.WHITE}
       labeled={true}
-      barStyle={[styles.navigator, globalStyles.illiniBlue]}>
+      barStyle={[styles.navigator, globalStyles.mediumBlue]}>
 
       {/* Home Screen */}
       <Tab.Screen

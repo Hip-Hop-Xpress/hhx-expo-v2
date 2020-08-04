@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import {
   SafeAreaView,
@@ -39,22 +40,24 @@ const Home = ({navigation}) => {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView style={globalStyles.illiniBlue}>
+      <SafeAreaView style={globalStyles.lightBlue}>
         <Header />
+        <LinearGradient
+            // Background Linear Gradient
+            colors={['rgba(0, 225, 255, 1)', 'rgba(0, 145, 255, 1)']}
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: 0,
+              height: 1000,
+            }}
+        />
         <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={globalStyles.illiniBlue}>
+          contentInsetAdjustmentBehavior="automatic">
           <View>
-            {/* Bus image */}
-            <Image
-              style={styles.busImage}
-              source={require('../assets/images/hhx_bus_blur_orange.jpg')}
-            />
-            {/* Text over bus image */}
-            <View style={styles.topImage}>
               <Text style={styles.topIntroText}>{strings.home.upperTitle}</Text>
               <Text style={styles.topTitleText}>{strings.home.lowerTitle}</Text>
-            </View>
           </View>
 
           {/* Body of Home Screen */}
@@ -110,6 +113,9 @@ const Home = ({navigation}) => {
                 title={strings.variations.title}
                 screenName={strings.variations.screenName}  
               />
+
+              
+
             </View>
 
             {/* Social Media Section */}
@@ -127,7 +133,7 @@ const screen = Dimensions.get('screen');
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: Colors.ILLINI_BLUE,
+    backgroundColor: Colors.LIGHT_BLUE,
   },
   topImage: {
     position: 'absolute',
@@ -139,25 +145,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   topIntroText: {
+    paddingTop: 40,
     color: 'white',
     fontSize: 20,
+    textAlign: 'center',
     fontFamily: Fonts.MONTSERRAT_REGULAR,
   },
   topTitleText: {
     marginTop: 10,
-    marginBottom: 15,
+    marginBottom: 5,
     color: 'white',
     fontSize: 40,
     textAlign: 'center',
     fontFamily: Fonts.MONTSERRAT_BLACK,
   },
   body: {
-    backgroundColor: 'white',
     paddingVertical: 20,
     marginBottom: 40,
   },
   sectionContainer: {
-    marginTop: 24,
     paddingHorizontal: 24,
     marginBottom: 10,
   },
@@ -165,7 +171,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MONTSERRAT_BLACK,
     fontSize: 24,
     textAlign: 'center',
-    color: 'black',
+    color: 'white',
     marginBottom: 18,
   },
   sectionDescription: {
@@ -174,7 +180,7 @@ const styles = StyleSheet.create({
     marginBottom: 25,
     fontSize: 16,
     fontWeight: '400',
-    color: 'black',
+    color: 'white',
   },
   busImage: {
     width: screen.width,
