@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
   sectionDescription: {
     fontFamily: Fonts.KARLA_REGULAR,
     marginTop: 0,
-    marginBottom: 25,
+    marginBottom: 18,
     fontSize: 16,
     fontWeight: '400',
     color: 'white',
@@ -206,9 +206,6 @@ const styles = StyleSheet.create({
     width: 55,
   },
 
-  updateScroll: {
-    color: 'white',
-  }
 });
 
 export default Home;
