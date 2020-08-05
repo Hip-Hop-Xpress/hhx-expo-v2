@@ -46,7 +46,7 @@ const featuredStyles = StyleSheet.create({
     color: 'lightgray',
   },
   body: {
-    backgroundColor: 'white',
+    //backgroundColor: 'white',
     marginBottom: 40,
     paddingBottom: 40,
   },
