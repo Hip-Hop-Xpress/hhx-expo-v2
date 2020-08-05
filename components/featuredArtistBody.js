@@ -18,7 +18,7 @@ import strings from '../assets/strings';
  */
 const ArtistBodyContent = ({name, date, bio, socials, headerImageUrl}) => {
   return (
-    <View style={[featuredStyles.body, globalStyles.illiniBlue]}>
+    <View style={[featuredStyles.body]}>
     
       {/* Title */}
       <View style={featuredStyles.title}>
@@ -36,12 +36,12 @@ const ArtistBodyContent = ({name, date, bio, socials, headerImageUrl}) => {
       </View>
 
       {/* Social Media Container */}
-      <View style={globalStyles.illiniBlue}>
+      <View>
         <SocialMedia platforms={socials} />
       </View>
 
       {/* Bio */}
-      <View style={[globalStyles.illiniBlue, featuredStyles.bioContainer]}>
+      <View style={[featuredStyles.bioContainer]}>
         <Text style={featuredStyles.bioTitle}>About</Text>
         <Text style={featuredStyles.bioBody}>{bio}</Text>
       </View>
