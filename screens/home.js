@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
   },
   topIntroText: {
     paddingTop: 40,
-    color: 'white',
+    color: Colors.WHITE,
     fontSize: 20,
     textAlign: 'center',
     fontFamily: Fonts.MONTSERRAT_REGULAR,
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
   topTitleText: {
     marginTop: 10,
     marginBottom: 5,
-    color: 'white',
+    color: Colors.WHITE,
     fontSize: 40,
     textAlign: 'center',
     fontFamily: Fonts.MONTSERRAT_BLACK,
@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MONTSERRAT_BLACK,
     fontSize: 24,
     textAlign: 'center',
-    color: 'white',
+    color: Colors.ILLINI_BLUE,
     marginBottom: 18,
   },
   sectionDescription: {
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     marginBottom: 25,
     fontSize: 16,
     fontWeight: '400',
-    color: 'white',
+    color: Colors.WHITE,
   },
   busImage: {
     width: screen.width,
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MONTSERRAT_BLACK,
     fontSize: 20,
     textAlign: 'center',
-    color: 'white',
+    color: Colors.WHITE,
   },
   socialMediaButton: {
     borderRadius: 50,
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
   },
 
   updateScroll: {
-    color: 'white',
+    color: Colors.WHITE,
   }
 });
 

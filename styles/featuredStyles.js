@@ -43,7 +43,7 @@ const featuredStyles = StyleSheet.create({
     fontFamily: Fonts.KARLA_REGULAR,
     textAlign: 'center',
     fontSize: 20,
-    color: Colors.WHITE,
+    color: Colors.ILLINI_BLUE_TRANSLUCENT,
   },
   body: {
     marginBottom: 40,

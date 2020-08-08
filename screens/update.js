@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MONTSERRAT_BLACK,
     fontSize: 30,
     textAlign: 'center',
-    color: Colors.WHITE,
+    color: Colors.ILLINI_BLUE,
   },
   title: {
     paddingTop: 20,

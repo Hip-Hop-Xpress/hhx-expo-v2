@@ -43,25 +43,19 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.KARLA_REGULAR,
     fontSize: 19,
     textAlign: 'left',
-    color: Colors.WHITE,
+    color: Colors.ILLINI_BLUE,
     marginBottom: 10,
   },
   updateAuthor: {
     fontFamily: Fonts.KARLA_BOLDITALIC,
     fontSize: 18,
     textAlign: 'right',
-    color: Colors.WHITE,
+    color: Colors.ILLINI_BLUE_TRANSLUCENT,
   },
   updateDate: {
     fontFamily: Fonts.KARLA_REGULAR,
     fontSize: 17,
     textAlign: 'right',
-    color: Colors.WHITE,
-  },
-  updateDescription: {
-    marginTop: 0,
-    fontSize: 16,
-    fontWeight: '400',
     color: Colors.WHITE,
   },
 });
