@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MONTSERRAT_BLACK,
     fontSize: 30,
     textAlign: 'center',
-    color: Colors.ILLINI_ORANGE,
+    color: Colors.WHITE,
   },
   title: {
     paddingTop: 20,
@@ -95,13 +95,13 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.KARLA_BOLDITALIC,
     fontSize: 18,
     textAlign: 'right',
-    color: 'white',
+    color: Colors.WHITE,
   },
   dateText: {
     fontFamily: Fonts.KARLA_REGULAR,
     fontSize: 17,
     textAlign: 'right',
-    color: 'lightgray',
+    color: Colors.WHITE,
   },
   paragraph: {
     marginVertical: 10,
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
   bodyText: {
     fontFamily: Fonts.KARLA_REGULAR,
     fontSize: 21,
-    color: 'lightgray',
+    color: Colors.WHITE,
   },
   body: {
     paddingBottom: 40,
