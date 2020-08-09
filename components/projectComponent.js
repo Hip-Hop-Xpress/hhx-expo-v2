@@ -42,7 +42,7 @@ const ProjectComponent = ({name, description, members, startDate, endDate, icon,
 
           {/* Members list */}
           <Text style={styles.members} key={key++}>
-            {'Members: ' + members.join(', ')}
+            {members.join(', ')}
           </Text>
 
           {/* Description */}
@@ -66,7 +66,8 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   projectName: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 27,
     textAlign: 'center',
     margin: 10,
@@ -79,26 +80,28 @@ const styles = StyleSheet.create({
 
   },
   projectTitle: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 22,
     textAlign: 'center',
     color: 'white',
   },
   members: {
-    fontFamily: Fonts.KARLA_BOLDITALIC,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 18,
     marginBottom: 10,
     color: 'white',
+    textAlign: 'center',
   },
   dateText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 17,
     textAlign: 'center',
     marginBottom: 15,
     color: 'white',
   },
   projectText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     fontSize: 16,
     color: 'white',
   },

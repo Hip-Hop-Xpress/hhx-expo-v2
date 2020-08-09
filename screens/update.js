@@ -77,7 +77,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   titleText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 30,
     textAlign: 'center',
     color: Colors.ILLINI_BLUE,
@@ -92,13 +93,14 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   authorText: {
-    fontFamily: Fonts.KARLA_BOLDITALIC,
+    fontFamily: Fonts.BODY,
+    fontWeight: 'bold',
     fontSize: 18,
     textAlign: 'right',
     color: Colors.WHITE,
   },
   dateText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     fontSize: 17,
     textAlign: 'right',
     color: Colors.WHITE,
@@ -107,7 +109,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   }, 
   bodyText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     fontSize: 21,
     color: Colors.WHITE,
   },

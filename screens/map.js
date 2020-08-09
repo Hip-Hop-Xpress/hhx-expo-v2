@@ -122,7 +122,7 @@ const Map = () => {
                 Linking.openURL(arcgisMapUrl)
               }}
             >
-              <Text style={styles.navButtontext}>
+              <Text style={styles.navButtonText}>
                 {strings.maps.storyMapTitle}
               </Text>
             </TouchableOpacity>
@@ -149,7 +149,8 @@ const styles = StyleSheet.create({
     paddingBottom: 15,
   },
   titleText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     marginTop: 5,
     marginBottom: 10,
     fontSize: 32,
@@ -157,7 +158,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   bodyText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     textAlign: 'center',
     marginHorizontal: 30,
     fontSize: 16,
@@ -188,8 +189,9 @@ const styles = StyleSheet.create({
     backgroundColor: TRANSPARENT,
     borderRadius: 20,
   },
-  navButtontext: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+  navButtonText: {
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 20,
     textAlign: 'center',
     color: 'white',

@@ -40,20 +40,20 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   updateTitle: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.HEADER,
     fontSize: 19,
     textAlign: 'left',
     color: Colors.ILLINI_BLUE,
     marginBottom: 10,
   },
   updateAuthor: {
-    fontFamily: Fonts.KARLA_BOLDITALIC,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 18,
     textAlign: 'right',
     color: Colors.ILLINI_BLUE_TRANSLUCENT,
   },
   updateDate: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 17,
     textAlign: 'right',
     color: Colors.WHITE,

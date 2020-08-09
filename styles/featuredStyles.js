@@ -8,7 +8,8 @@ const featuredStyles = StyleSheet.create({
     paddingBottom: 15,
   },
   titleText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     marginTop: 5,
     marginBottom: 10,
     fontSize: 29,
@@ -32,7 +33,7 @@ const featuredStyles = StyleSheet.create({
     alignItems: 'center',
   },
   artistNameText: {
-    fontFamily: Fonts.MONTSERRAT_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     marginTop: 10,
     marginBottom: 15,
     color: Colors.WHITE,
@@ -40,7 +41,7 @@ const featuredStyles = StyleSheet.create({
     textAlign: 'center',
   },
   dateText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     textAlign: 'center',
     fontSize: 20,
     color: Colors.ILLINI_BLUE_TRANSLUCENT,
@@ -66,14 +67,15 @@ const featuredStyles = StyleSheet.create({
     paddingVertical: 15,
   },
   bioTitle: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 30,
     textAlign: 'center',
     color: Colors.ILLINI_BLUE,
     marginBottom: 10,
   },
   bioBody: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     fontSize: 18,
     color: Colors.WHITE,
     lineHeight: 30,

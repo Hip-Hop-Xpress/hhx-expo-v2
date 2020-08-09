@@ -10,6 +10,7 @@ import {
   StatusBar,
   Image,
   Dimensions,
+  Platform,
 } from 'react-native';
 
 // Components
@@ -149,7 +150,7 @@ const styles = StyleSheet.create({
     color: Colors.WHITE,
     fontSize: 20,
     textAlign: 'center',
-    fontFamily: Fonts.MONTSERRAT_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
   },
   topTitleText: {
     marginTop: 10,
@@ -157,7 +158,8 @@ const styles = StyleSheet.create({
     color: Colors.WHITE,
     fontSize: 40,
     textAlign: 'center',
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: Platform.OS === 'ios' ? '900' : 'bold',
   },
   body: {
     paddingVertical: 20,
@@ -168,14 +170,15 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   sectionTitle: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 24,
     textAlign: 'center',
     color: Colors.ILLINI_BLUE,
     marginBottom: 18,
   },
   sectionDescription: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     marginTop: 0,
     marginBottom: 25,
     fontSize: 16,
@@ -194,12 +197,6 @@ const styles = StyleSheet.create({
   navButton: {
     paddingVertical: 15,
     marginVertical: -1,
-  },
-  navButtontext: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
-    fontSize: 20,
-    textAlign: 'center',
-    color: Colors.WHITE,
   },
   socialMediaButton: {
     borderRadius: 50,
