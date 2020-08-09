@@ -65,7 +65,8 @@ const styles = StyleSheet.create({
     paddingBottom: 15,
   },
   titleText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     marginTop: 5,
     marginBottom: 10,
     fontSize: 32,
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   introText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     textAlign: 'center',
     marginHorizontal: 30,
     fontSize: 16,

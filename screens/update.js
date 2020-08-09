@@ -77,10 +77,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   titleText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 30,
     textAlign: 'center',
-    color: Colors.ILLINI_ORANGE,
+    color: Colors.ILLINI_BLUE,
   },
   title: {
     paddingTop: 20,
@@ -92,24 +93,25 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   authorText: {
-    fontFamily: Fonts.KARLA_BOLDITALIC,
+    fontFamily: Fonts.BODY,
+    fontWeight: 'bold',
     fontSize: 18,
     textAlign: 'right',
-    color: 'white',
+    color: Colors.WHITE,
   },
   dateText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     fontSize: 17,
     textAlign: 'right',
-    color: 'lightgray',
+    color: Colors.WHITE,
   },
   paragraph: {
     marginVertical: 10,
   }, 
   bodyText: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.BODY,
     fontSize: 21,
-    color: 'lightgray',
+    color: Colors.WHITE,
   },
   body: {
     paddingBottom: 40,

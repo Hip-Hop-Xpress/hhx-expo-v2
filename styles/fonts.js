@@ -10,4 +10,8 @@ export const MONTSERRAT_REGULAR = 'Montserrat-Regular';
 export const MONTSERRAT_BLACK   = 'Montserrat-Black';
 export const KARLA_REGULAR      = 'Karla-Regular';
 export const KARLA_BOLDITALIC   = 'Karla-BoldItalic';
-export const DEFAULT            = 'sans-serif';
+export const SYSTEM             = 'System';
+
+export const HEADER    = SYSTEM;
+export const SUBHEADER = SYSTEM;
+export const BODY      = SYSTEM;

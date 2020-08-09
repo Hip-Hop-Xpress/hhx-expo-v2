@@ -23,7 +23,7 @@ function AppTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Home"
-      activeColor={Colors.ILLINI_ORANGE}
+      activeColor={Colors.ILLINI_BLUE_TRANSLUCENT}
       inactiveColor={Colors.WHITE}
       labeled={true}
       barStyle={[styles.navigator, globalStyles.mediumBlue]}>

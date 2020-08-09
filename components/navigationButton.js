@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   navButtontext: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     fontSize: 20,
     textAlign: 'center',
     color: 'white',

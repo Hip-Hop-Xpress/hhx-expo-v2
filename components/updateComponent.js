@@ -3,6 +3,7 @@ import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 import globalStyles from '../styles/global';
 import * as Fonts from '../styles/fonts';
+import * as Colors from '../styles/colors';
 
 const UpdateComponent = props => {
   const update = (
@@ -39,29 +40,23 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   updateTitle: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.HEADER,
     fontSize: 19,
     textAlign: 'left',
-    color: 'white',
+    color: Colors.ILLINI_BLUE,
     marginBottom: 10,
   },
   updateAuthor: {
-    fontFamily: Fonts.KARLA_BOLDITALIC,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 18,
     textAlign: 'right',
-    color: 'white',
+    color: Colors.ILLINI_BLUE_TRANSLUCENT,
   },
   updateDate: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 17,
     textAlign: 'right',
-    color: 'lightgray',
-  },
-  updateDescription: {
-    marginTop: 0,
-    fontSize: 16,
-    fontWeight: '400',
-    color: 'white',
+    color: Colors.WHITE,
   },
 });
 

@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     paddingBottom: 5,
   },
   titleText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
     marginTop: 5,
     marginBottom: 5,
     fontSize: 30,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   introText: {
-    fontFamily: Fonts.KARLA_BOLDITALIC,
+    fontFamily: Fonts.SUBHEADER,
     textAlign: 'center',
     marginHorizontal: 30,
     fontSize: 16,
