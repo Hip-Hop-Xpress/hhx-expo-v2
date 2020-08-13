@@ -79,6 +79,7 @@ const featuredStyles = StyleSheet.create({
     fontSize: 18,
     color: Colors.WHITE,
     lineHeight: 30,
+    textAlign: 'center',
   },
   pastArtistsBody: {
     backgroundColor: '#121212',
