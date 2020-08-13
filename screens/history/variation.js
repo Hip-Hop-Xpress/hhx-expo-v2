@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MONTSERRAT_BLACK,
     fontSize: 30,
     textAlign: 'center',
-    color: Colors.ILLINI_ORANGE,
+    color: 'white',
   },
   title: {
     fontFamily: Fonts.MONTSERRAT_BLACK,
@@ -77,11 +77,12 @@ const styles = StyleSheet.create({
   },
   date: {
     fontFamily: Fonts.KARLA_BOLDITALIC,
-    color: 'lightgray',
+    color: 'white',
     fontSize: 24,
     textAlign: 'center',
   },
   body: {
+    color: 'white',
     paddingBottom: 40,
     paddingHorizontal: 12,
   },

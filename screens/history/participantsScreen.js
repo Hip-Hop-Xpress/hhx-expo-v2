@@ -1,4 +1,5 @@
 import React from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import {
   SafeAreaView,
   StyleSheet,
@@ -17,6 +18,7 @@ import ParticipantsList from '../../components/participantsList';
 import strings from '../../assets/strings';
 import globalStyles from '../../styles/global';
 import * as Fonts from '../../styles/fonts';
+import * as Colors from '../../styles/colors';
 
 // Supresses visual warnings
 YellowBox.ignoreWarnings([
@@ -33,7 +35,18 @@ const Participants = ({navigation}) => {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView style={globalStyles.illiniBlue}>
+      <SafeAreaView>
+      <LinearGradient
+            // Background Linear Gradient
+            colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: 0,
+              height: 1000,
+            }}
+        />
         <ScrollView contentInsetAdjustmentBehavior="automatic">
           <View>
             {/* Top image */}
@@ -95,7 +108,6 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   body: {
-    backgroundColor: 'white',
     marginBottom: 40,
     paddingBottom: 40,
   },
