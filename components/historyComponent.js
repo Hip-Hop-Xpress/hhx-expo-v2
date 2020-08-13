@@ -29,7 +29,7 @@ const HistoryComponent = ({title, paragraphs, images, screenName, navigation}) =
             images: images,
           })
       }>
-      <View style={[componentStyles.container, globalStyles.illiniBlue]}>
+      <View style={[componentStyles.container, globalStyles.transparent]}>
         <Text style={componentStyles.title}>{title}</Text>
       </View>
     </TouchableOpacity>

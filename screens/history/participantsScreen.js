@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   },
   participantsListContainer: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'column',
     flexWrap: 'wrap',
     alignContent: 'stretch',
     alignItems: 'center',
