@@ -72,6 +72,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.courses.title,
+          headerShown: false,
         }}
       />
 
@@ -82,6 +83,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.artistHistories.title,
+          headerShown: false,
         }}
       />
 
@@ -92,6 +94,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.artistHistories.title,
+          headerShown: false,
         }}
       />
 
@@ -102,6 +105,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.participants.title,
+          headerShown: false,
         }}
       />
 
@@ -112,6 +116,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.participants.title,
+          headerShown: false,
         }}
       />
 
@@ -122,6 +127,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.variations.title,
+          headerShown: false,
         }}
       />
 
@@ -132,6 +138,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.variations.title,
+          headerShown: false,
         }}
       />
 
