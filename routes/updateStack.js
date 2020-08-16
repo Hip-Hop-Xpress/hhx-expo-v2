@@ -48,7 +48,7 @@ const UpdateStack = props => {
           gestureDirection: 'horizontal',
           gestureResponseDistance: responseDistance,
           gestureEnabled: true,
-          headerShown: true,
+          headerShown: false,
         }}
       />
       
