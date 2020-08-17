@@ -123,10 +123,10 @@ const Home = ({navigation}) => {
             {/* Contact */}
             <View style={{...globalStyles.sectionContainer, marginTop: 20}}>
               <Text style={globalStyles.sectionTitle}>
-                Contact Us
+                {strings.home.contact.title}
               </Text>
               <Text style={globalStyles.sectionDescription}>
-                Want to submit feedback on the app or get in touch with the Hip Hop Xpress? Contact us below.
+                {strings.home.contact.description}
               </Text>
               <NavigationButton
                 navigation={navigation}

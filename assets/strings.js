@@ -13,7 +13,11 @@ const strings = {
     history: {
       title: 'Background',
       description:
-        'The HipHop Xpress is an internet-connected mobile classroom and sound studio, a means to collect oral histories, a cross-generational catalyst for music sharing and production, and a method to link communities across the state through music, dance, visual arts, and history.',
+        'The Hip Hop Xpress is an internet-connected mobile classroom and sound studio, a means to collect oral histories, a cross-generational catalyst for music sharing and production, and a method to link communities across the state through music, dance, visual arts, and history.',
+    },
+    contact: {
+      title: 'Contact Us',
+      description: 'Want to submit feedback on the app or get in touch with the Hip Hop Xpress? Contact us below.',
     },
   },
   contact: {
