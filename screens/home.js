@@ -114,14 +114,26 @@ const Home = ({navigation}) => {
                 title={strings.variations.title}
                 screenName={strings.variations.screenName}  
               />
-
-              
-
             </View>
 
             {/* Social Media Section */}
             <View style={styles.sectionContainer}>
               <SocialMedia platforms={socialMediaInfo} />
+            </View>
+
+            {/* Contact */}
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>
+                Contact Us
+              </Text>
+              <Text style={styles.sectionDescription}>
+                Want to get in touch with the Hip Hop Xpress! Contact us below.
+              </Text>
+              <NavigationButton
+                navigation={navigation}
+                title={'Contact Us'}
+                screenName={'Contact'}
+              />
             </View>
           </View>
         </ScrollView>
@@ -167,7 +179,7 @@ const styles = StyleSheet.create({
   },
   sectionContainer: {
     paddingHorizontal: 24,
-    marginBottom: 10,
+    marginBottom: 15,
   },
   sectionTitle: {
     fontFamily: Fonts.HEADER,
@@ -202,10 +214,6 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     width: 55,
   },
-
-  updateScroll: {
-    color: Colors.WHITE,
-  }
 });
 
 export default Home;

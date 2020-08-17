@@ -11,6 +11,7 @@ import ArtistHistories from '../screens/history/artistHistoryScreen';
 import ArtistHistory from '../screens/history/artistHistory';
 import Variations from '../screens/history/variationsScreen';
 import Variation from '../screens/history/variation';
+import Contact from '../screens/contact';
 import strings from '../assets/strings';
 import * as Colors from '../styles/colors';
 
@@ -140,6 +141,17 @@ const UpdateStack = props => {
           ...nonLandingScreenOptions,
           headerTitle: strings.variations.title,
           headerShown: false,
+        }}
+      />
+
+      {/* Contact Screen */}
+      <Stack.Screen 
+        name="Contact"
+        component={Contact}
+        options={{
+          ...nonLandingScreenOptions,
+          headerTitle: 'Contact',
+          headerShown: true,
         }}
       />
 
