@@ -16,6 +16,11 @@ const strings = {
         'The HipHop Xpress is an internet-connected mobile classroom and sound studio, a means to collect oral histories, a cross-generational catalyst for music sharing and production, and a method to link communities across the state through music, dance, visual arts, and history.',
     },
   },
+  contact: {
+    screenName: 'Contact',
+    title: 'Contact Us',
+    description: 'If you need more information, want to experience a certain workshop, or want to request the Double Dutch Boom Bus to your community, let us know down below!',
+  },
   projects: {
     title: 'Our Projects',
     subtitle:

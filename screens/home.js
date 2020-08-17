@@ -54,8 +54,7 @@ const Home = ({navigation}) => {
             }}
         />
         <Header />
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic">
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
           <View>
               <Text style={styles.topIntroText}>{strings.home.upperTitle}</Text>
               <Text style={styles.topTitleText}>{strings.home.lowerTitle}</Text>
@@ -65,22 +64,22 @@ const Home = ({navigation}) => {
 
           {/* Updates section */}
           <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>
+            <View style={globalStyles.sectionContainer}>
+              <Text style={globalStyles.sectionTitle}>
                 {strings.home.updatesInfo.title}
               </Text>
-              <Text style={styles.sectionDescription}>
+              <Text style={globalStyles.sectionDescription}>
                 {strings.home.updatesInfo.description}
               </Text>
               <Updates navigation={navigation} />
             </View>
 
             {/* History Section */}
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>
+            <View style={globalStyles.sectionContainer}>
+              <Text style={globalStyles.sectionTitle}>
                 {strings.home.history.title}
               </Text>
-              <Text style={styles.sectionDescription}>
+              <Text style={globalStyles.sectionDescription}>
                 {strings.home.history.description}
               </Text>
             </View>
@@ -117,17 +116,17 @@ const Home = ({navigation}) => {
             </View>
 
             {/* Social Media Section */}
-            <View style={styles.sectionContainer}>
+            <View style={globalStyles.sectionContainer}>
               <SocialMedia platforms={socialMediaInfo} />
             </View>
 
             {/* Contact */}
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>
+            <View style={{...globalStyles.sectionContainer, marginTop: 20}}>
+              <Text style={globalStyles.sectionTitle}>
                 Contact Us
               </Text>
-              <Text style={styles.sectionDescription}>
-                Want to get in touch with the Hip Hop Xpress! Contact us below.
+              <Text style={globalStyles.sectionDescription}>
+                Want to submit feedback on the app or get in touch with the Hip Hop Xpress? Contact us below.
               </Text>
               <NavigationButton
                 navigation={navigation}
@@ -176,26 +175,6 @@ const styles = StyleSheet.create({
   body: {
     paddingVertical: 20,
     marginBottom: 40,
-  },
-  sectionContainer: {
-    paddingHorizontal: 24,
-    marginBottom: 15,
-  },
-  sectionTitle: {
-    fontFamily: Fonts.HEADER,
-    fontWeight: 'bold',
-    fontSize: 24,
-    textAlign: 'center',
-    color: Colors.ILLINI_BLUE,
-    marginBottom: 18,
-  },
-  sectionDescription: {
-    fontFamily: Fonts.BODY,
-    marginTop: 0,
-    marginBottom: 25,
-    fontSize: 16,
-    fontWeight: '400',
-    color: Colors.WHITE,
   },
   busImage: {
     width: screen.width,

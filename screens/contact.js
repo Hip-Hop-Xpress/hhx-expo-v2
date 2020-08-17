@@ -1,9 +1,10 @@
 import React from 'react';
-import {StatusBar, SafeAreaView} from 'react-native';
+import { StatusBar, SafeAreaView, ScrollView, Text, View, StyleSheet } from 'react-native';
 import Header from '../components/header';
 import { LinearGradient } from 'expo-linear-gradient';
 import globalStyles from '../styles/global';
 import * as Colors from '../styles/colors';
+import strings from '../assets/strings';
 
 const Contact = ({ navigation }) => {
   return (
@@ -22,10 +23,29 @@ const Contact = ({ navigation }) => {
             }}
         />
         <Header />
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
+          <View style={styles.body}>
+            <View style={{...globalStyles.sectionContainer}}>
+              <Text style={globalStyles.sectionTitle}>
+                {strings.contact.title}
+              </Text>
+              <Text style={globalStyles.sectionDescription}>
+                {strings.contact.description}
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
 
       </SafeAreaView>
     </>
   );
 };
+
+const styles = StyleSheet.create({
+  body: {
+    paddingVertical: 20,
+    marginBottom: 40,
+  },
+});
 
 export default Contact;
