@@ -42,7 +42,6 @@ const Home = ({navigation}) => {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={globalStyles.lightBlue}>
-        <Header />
         <LinearGradient
             // Background Linear Gradient
             colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
@@ -54,6 +53,7 @@ const Home = ({navigation}) => {
               height: 1000,
             }}
         />
+        <Header />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic">
           <View>
