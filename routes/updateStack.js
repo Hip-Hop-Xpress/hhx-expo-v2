@@ -26,7 +26,6 @@ const UpdateStack = props => {
       }}
     >
       
-      {/* TODO: CHANGE NAME OF VOTING TO UPDATES */}
       {/* Updates Screen */}
       <Stack.Screen
         name="Updates"

@@ -62,6 +62,7 @@ const UpdateStack = props => {
         options={{
           ...nonLandingScreenOptions,
           headerTitle: strings.home.updatesInfo.headerTitle,
+          headerShown: false,
         }}
       />
 
@@ -141,16 +142,6 @@ const UpdateStack = props => {
           headerShown: false,
         }}
       />
-
-      {/* Tester Main Screen
-      <Stack.Screen
-        name="Tester"
-        component={Tester}
-        options={{
-          ...nonLandingScreenOptions,
-          headerTitle: strings.variations.title,
-        }}
-      /> */}
 
     </Stack.Navigator>
   );
