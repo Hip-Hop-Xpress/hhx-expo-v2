@@ -1,4 +1,5 @@
 import React from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,6 +25,17 @@ const Variations = (props) => {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={styles.areaView}>
+      <LinearGradient
+            // Background Linear Gradient
+            colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: 0,
+              height: 1000,
+            }}
+        />
         <ScrollView contentInsetAdjustmentBehavior="automatic">
           <View>
             {/* Title */}
@@ -49,12 +61,12 @@ const Variations = (props) => {
 
 const styles = StyleSheet.create({
   areaView: {
-    backgroundColor: Colors.ILLINI_BLUE,
+    //backgroundColor: Colors.ILLINI_BLUE,
   },
   topView: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Colors.ILLINI_ORANGE,
+    //backgroundColor: Colors.ILLINI_ORANGE,
   },
   topImage: {
     height: 250,

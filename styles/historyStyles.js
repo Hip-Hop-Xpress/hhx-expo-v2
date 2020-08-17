@@ -6,19 +6,24 @@ const width = screen.width;
 const height = screen.height;
 export const componentStyles = StyleSheet.create({
   container: {
-    paddingHorizontal: 15,
-    paddingVertical: 15,
-    margin: 2,
-    width: width / 2 - 8,
+    width: width-50,
     height: height / 6,
+    marginVertical: 5,
+    paddingHorizontal: 10,
+    //paddingVertical: 20,
+    alignItems: 'center',
+    borderRadius: 20,
+    justifyContent: 'center',
   },
   title: {
-    fontFamily: Fonts.KARLA_REGULAR,
-    fontSize: 21,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
+    fontSize: 40,
     textAlign: 'left',
-    textAlignVertical: "bottom",
+    //textAlignVertical: "bottom",
     color: 'white',
-    marginBottom: 10,
+    //marginBottom: 10,
+    justifyContent: 'center',
   },
   subtitle: {
     fontFamily: Fonts.KARLA_BOLDITALIC,
