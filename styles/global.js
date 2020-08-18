@@ -41,6 +41,20 @@ const globalStyles = StyleSheet.create({
     fontWeight: '400',
     color: Colors.WHITE,
   },
+  button: {
+    marginVertical: 5,
+    paddingHorizontal: 12,
+    paddingTop: 12,  // 12
+    paddingBottom: 20,  // 20
+    borderRadius: 20,
+  },
+  buttonText: {
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
+    fontSize: 20,
+    textAlign: 'center',
+    color: 'white',
+  },
 });
 
 export default globalStyles;

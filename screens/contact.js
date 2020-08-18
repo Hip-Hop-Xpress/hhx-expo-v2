@@ -5,6 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import globalStyles from '../styles/global';
 import * as Colors from '../styles/colors';
 import strings from '../assets/strings';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const Contact = ({ navigation }) => {
   const initials = {
@@ -50,6 +51,7 @@ const Contact = ({ navigation }) => {
                 style={styles.formInput}
                 onChangeText={(text) => setName(text)}
                 placeholder={initials.name}
+                placeholderTextColor={Colors.TRANSPARENT}
                 clearTextOnFocus
                 returnKeyType="next"
               />
@@ -58,6 +60,7 @@ const Contact = ({ navigation }) => {
                 style={styles.formInput}
                 onChangeText={(text) => setEmail(text)}
                 placeholder={initials.email}
+                placeholderTextColor={Colors.TRANSPARENT}
                 autoCompleteType="email"
                 keyboardType="email-address"
                 clearTextOnFocus
@@ -68,6 +71,7 @@ const Contact = ({ navigation }) => {
                 style={styles.formInput}
                 onChangeText={(text) => setSubject(text)}
                 placeholder={initials.subject}
+                placeholderTextColor={Colors.TRANSPARENT}
                 clearTextOnFocus
                 returnKeyType="next"
               />
@@ -75,14 +79,29 @@ const Contact = ({ navigation }) => {
               <TextInput
                 style={{ ...styles.formInput, height: 100, paddingTop: 15 }}
                 onChangeText={(text) => setMessage(text)}
-                onTextInput={() => console.log('on text input')}
                 placeholder={initials.message}
+                placeholderTextColor={Colors.TRANSPARENT}
                 multiline
                 numberOfLines={12}
                 clearTextOnFocus
                 returnKeyType="send"
               />
-              
+
+              <TouchableOpacity
+                style={[globalStyles.button, globalStyles.transparent]}
+                activeOpacity={0.8}
+                onPress={() => {
+                  const submission = {
+                    name,
+                    email,
+                    subject,
+                    message,
+                  };
+                  console.log(submission);
+                }}
+              >
+                <Text style={globalStyles.buttonText}>Submit</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </ScrollView>
