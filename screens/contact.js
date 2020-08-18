@@ -88,7 +88,7 @@ const Contact = ({ navigation }) => {
               />
 
               <TouchableOpacity
-                style={[globalStyles.button, globalStyles.transparent]}
+                style={[globalStyles.button, globalStyles.transparent, {marginVertical: 50}]}
                 activeOpacity={0.8}
                 onPress={() => {
                   const submission = {
