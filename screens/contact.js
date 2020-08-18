@@ -7,8 +7,17 @@ import * as Colors from '../styles/colors';
 import strings from '../assets/strings';
 
 const Contact = ({ navigation }) => {
-  const [firstName, setFirstName] = useState('First name');
-  const [lastName, setLastName] = useState('Last name');
+  const initials = {
+    name: 'Name',
+    email: 'Email',
+    subject: 'Subject',
+    message: 'Type your message here...',
+  };
+
+  const [name, setName] = useState(initials.name);
+  const [email, setEmail] = useState(initials.email);
+  const [subject, setSubject] = useState(initials.subject);
+  const [message, setMessage] = useState(initials.message);
 
   return (
     <>
@@ -37,22 +46,41 @@ const Contact = ({ navigation }) => {
               </Text>
             </View>
             <View style={globalStyles.sectionContainer}>
-              <Text style={styles.formTitle}>
-                First Name
-              </Text>
               <TextInput
                 style={styles.formInput}
-                onChangeText={(text) => setFirstName(text)}
-                value={firstName}
+                onChangeText={(text) => setName(text)}
+                placeholder={initials.name}
+                clearTextOnFocus
+                returnKeyType="next"
               />
 
-              <Text style={styles.formTitle}>
-                Last Name
-              </Text>
               <TextInput
                 style={styles.formInput}
-                onChangeText={(text) => setLastName(text)}
-                value={lastName}
+                onChangeText={(text) => setEmail(text)}
+                placeholder={initials.email}
+                autoCompleteType="email"
+                keyboardType="email-address"
+                clearTextOnFocus
+                returnKeyType="next"
+              />
+
+              <TextInput
+                style={styles.formInput}
+                onChangeText={(text) => setSubject(text)}
+                placeholder={initials.subject}
+                clearTextOnFocus
+                returnKeyType="next"
+              />
+
+              <TextInput
+                style={{ ...styles.formInput, height: 100, paddingTop: 15 }}
+                onChangeText={(text) => setMessage(text)}
+                onTextInput={() => console.log('on text input')}
+                placeholder={initials.message}
+                multiline
+                numberOfLines={12}
+                clearTextOnFocus
+                returnKeyType="send"
               />
               
             </View>
@@ -82,8 +110,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderWidth: 1,
     borderRadius: 18,
-    height: 50,
     marginBottom: 20,
+    paddingVertical: 20,
   },
   body: {
     paddingVertical: 20,
