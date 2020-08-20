@@ -128,11 +128,16 @@ const Home = ({navigation}) => {
               <Text style={globalStyles.sectionDescription}>
                 {strings.home.contact.description}
               </Text>
-              <NavigationButton
-                navigation={navigation}
-                title={'Contact Us'}
-                screenName={'Contact'}
-              />
+              <TouchableOpacity
+                style={[globalStyles.button, globalStyles.transparent]}
+                activeOpacity={0.8}
+                onPress={() => {
+                  // TODO: Link to sign up genius page here
+                  console.log('Link to SignUpGenius page');
+                }}
+              >
+                <Text style={globalStyles.buttonText}>Submit Feedback</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </ScrollView>
