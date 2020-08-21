@@ -64,7 +64,6 @@ const Map = () => {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={globalStyles.lightBlue}>
-        <Header />
         <LinearGradient
             // Background Linear Gradient
             colors={LIGHT_MEDIUM_BLUE_GRADIENT}
@@ -76,6 +75,7 @@ const Map = () => {
               height: 1000,
             }}
         />
+        <Header />
         <ScrollView 
           contentInsetAdjustmentBehavior="automatic"
           refreshControl={

@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import * as Colors from './colors';
+import * as Fonts from './fonts';
 
 const globalStyles = StyleSheet.create({
   illiniOrange: {
@@ -19,6 +20,40 @@ const globalStyles = StyleSheet.create({
   },
   transparent: {
     backgroundColor: Colors.TRANSPARENT,
+  },
+  sectionContainer: {
+    paddingHorizontal: 24,
+    marginBottom: 15,
+  },
+  sectionTitle: {
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
+    fontSize: 24,
+    textAlign: 'center',
+    color: Colors.ILLINI_BLUE,
+    marginBottom: 18,
+  },
+  sectionDescription: {
+    fontFamily: Fonts.BODY,
+    marginTop: 0,
+    marginBottom: 25,
+    fontSize: 16,
+    fontWeight: '400',
+    color: Colors.WHITE,
+  },
+  button: {
+    marginVertical: 5,
+    paddingHorizontal: 12,
+    paddingTop: 12,  // 12
+    paddingBottom: 20,  // 20
+    borderRadius: 20,
+  },
+  buttonText: {
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
+    fontSize: 20,
+    textAlign: 'center',
+    color: 'white',
   },
 });
 

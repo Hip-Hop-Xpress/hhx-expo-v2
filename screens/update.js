@@ -26,7 +26,6 @@ const Update = props => {
     <>
       <StatusBar barStyle="light-content"/>
       <SafeAreaView style={globalStyles.lightBlue}>
-        <Header />
         <LinearGradient
             // Background Linear Gradient
             colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
@@ -38,6 +37,7 @@ const Update = props => {
               height: 1000,
             }}
         />
+        <Header />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic">
           {/* Screen body */}

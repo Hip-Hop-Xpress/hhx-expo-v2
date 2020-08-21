@@ -38,7 +38,6 @@ const Featured = ({navigation}) => {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={[globalStyles.illiniBlue]}>
-        <Header />
         <LinearGradient
             // Background Linear Gradient
             colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
@@ -50,6 +49,7 @@ const Featured = ({navigation}) => {
               height: 1000,
             }}
         />
+        <Header />
         <ScrollView contentInsetAdjustmentBehavior="automatic">
           {/* Body */}
           {featuredArtists.length === 0

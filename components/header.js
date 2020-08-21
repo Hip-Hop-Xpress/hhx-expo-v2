@@ -2,14 +2,14 @@ import React from 'react';
 import {StyleSheet, Image, View, Dimensions} from 'react-native';
 import globalStyles from '../styles/global';
 
-export default function Header() {
-  return (
+export default function Header({ show = false }) {
+  return (show && 
     <View style={globalStyles.lightBlue}>
-      {/* <Image
+      <Image
         style={styles.logo}
         resizeMode="cover"
         source={require('../assets/images/hhx_logo_transparent.png')}
-      /> */}
+      />
     </View>
   );
 }

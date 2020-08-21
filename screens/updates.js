@@ -21,7 +21,6 @@ const Updates = ({navigation}) => {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={globalStyles.lightBlue}>
-        <Header />
         <LinearGradient
             // Background Linear Gradient
             colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
@@ -33,6 +32,7 @@ const Updates = ({navigation}) => {
               height: 1000,
             }}
         />
+        <Header />
       </SafeAreaView>
       {/* Body */}
       <View  style={styles.body}>

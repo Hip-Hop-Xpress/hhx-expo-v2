@@ -11,6 +11,8 @@ import {
   Image,
   Dimensions,
   Platform,
+  Linking,
+  TouchableOpacity
 } from 'react-native';
 
 // Components
@@ -42,7 +44,6 @@ const Home = ({navigation}) => {
     <>
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={globalStyles.lightBlue}>
-        <Header />
         <LinearGradient
             // Background Linear Gradient
             colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
@@ -54,8 +55,8 @@ const Home = ({navigation}) => {
               height: 1000,
             }}
         />
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic">
+        <Header />
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
           <View>
               <Text style={styles.topIntroText}>{strings.home.upperTitle}</Text>
               <Text style={styles.topTitleText}>{strings.home.lowerTitle}</Text>
@@ -65,22 +66,22 @@ const Home = ({navigation}) => {
 
           {/* Updates section */}
           <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>
+            <View style={globalStyles.sectionContainer}>
+              <Text style={globalStyles.sectionTitle}>
                 {strings.home.updatesInfo.title}
               </Text>
-              <Text style={styles.sectionDescription}>
+              <Text style={globalStyles.sectionDescription}>
                 {strings.home.updatesInfo.description}
               </Text>
               <Updates navigation={navigation} />
             </View>
 
             {/* History Section */}
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>
+            <View style={globalStyles.sectionContainer}>
+              <Text style={globalStyles.sectionTitle}>
                 {strings.home.history.title}
               </Text>
-              <Text style={styles.sectionDescription}>
+              <Text style={globalStyles.sectionDescription}>
                 {strings.home.history.description}
               </Text>
             </View>
@@ -114,14 +115,30 @@ const Home = ({navigation}) => {
                 title={strings.variations.title}
                 screenName={strings.variations.screenName}  
               />
-
-              
-
             </View>
 
             {/* Social Media Section */}
-            <View style={styles.sectionContainer}>
+            <View style={globalStyles.sectionContainer}>
               <SocialMedia platforms={socialMediaInfo} />
+            </View>
+
+            {/* Contact */}
+            <View style={{...globalStyles.sectionContainer, marginTop: 20}}>
+              <Text style={globalStyles.sectionTitle}>
+                {strings.home.contact.title}
+              </Text>
+              <Text style={globalStyles.sectionDescription}>
+                {strings.home.contact.description}
+              </Text>
+              <TouchableOpacity
+                style={[globalStyles.button, globalStyles.transparent]}
+                activeOpacity={0.8}
+                onPress={() => {
+                  Linking.openURL(strings.home.contact.contactUrl)
+                }}
+              >
+                <Text style={globalStyles.buttonText}>Sign up to contact</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </ScrollView>
@@ -165,26 +182,6 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     marginBottom: 40,
   },
-  sectionContainer: {
-    paddingHorizontal: 24,
-    marginBottom: 10,
-  },
-  sectionTitle: {
-    fontFamily: Fonts.HEADER,
-    fontWeight: 'bold',
-    fontSize: 24,
-    textAlign: 'center',
-    color: Colors.ILLINI_BLUE,
-    marginBottom: 18,
-  },
-  sectionDescription: {
-    fontFamily: Fonts.BODY,
-    marginTop: 0,
-    marginBottom: 25,
-    fontSize: 16,
-    fontWeight: '400',
-    color: Colors.WHITE,
-  },
   busImage: {
     width: screen.width,
     height: 250,
@@ -202,10 +199,6 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     width: 55,
   },
-
-  updateScroll: {
-    color: Colors.WHITE,
-  }
 });
 
 export default Home;

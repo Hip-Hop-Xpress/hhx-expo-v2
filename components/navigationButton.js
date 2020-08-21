@@ -13,14 +13,14 @@ import * as Fonts from '../styles/fonts';
 const NavigationButton = ({navigation, title, screenName}) => {
   return (
     <TouchableOpacity
-      style={[styles.navButton, globalStyles.transparent]}
+      style={[globalStyles.button, globalStyles.transparent]}
       activeOpacity={0.8}
       onPress={
         () => {navigation.navigate(screenName, {
           navigation: navigation,
         })}
       }>
-        <Text style={styles.navButtontext}>{title}</Text>
+        <Text style={globalStyles.buttonText}>{title}</Text>
     </TouchableOpacity>
   );
 }
