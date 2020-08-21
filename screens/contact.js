@@ -1,3 +1,5 @@
+// Contact screen currently unused because admin prefers external methods of contact
+
 import React, { useState } from 'react';
 import { StatusBar, SafeAreaView, ScrollView, Text, TextInput, View, StyleSheet } from 'react-native';
 import Header from '../components/header';

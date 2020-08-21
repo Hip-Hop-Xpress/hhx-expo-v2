@@ -11,6 +11,8 @@ import {
   Image,
   Dimensions,
   Platform,
+  Linking,
+  TouchableOpacity
 } from 'react-native';
 
 // Components
@@ -132,11 +134,10 @@ const Home = ({navigation}) => {
                 style={[globalStyles.button, globalStyles.transparent]}
                 activeOpacity={0.8}
                 onPress={() => {
-                  // TODO: Link to sign up genius page here
-                  console.log('Link to SignUpGenius page');
+                  Linking.openURL(strings.home.contact.contactUrl)
                 }}
               >
-                <Text style={globalStyles.buttonText}>Submit Feedback</Text>
+                <Text style={globalStyles.buttonText}>Sign up to contact</Text>
               </TouchableOpacity>
             </View>
           </View>

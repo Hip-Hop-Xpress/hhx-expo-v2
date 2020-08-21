@@ -17,7 +17,8 @@ const strings = {
     },
     contact: {
       title: 'Contact Us',
-      description: 'Want to submit feedback on the app or get in touch with the Hip Hop Xpress? Contact us below.',
+      description: 'Want to submit feedback on the app or get in touch with the Hip Hop Xpress? Sign up to contact us below.',
+      contactUrl: 'https://www.signupgenius.com/go/904094eabab2ba1ff2-hiphop',
     },
   },
   contact: {
