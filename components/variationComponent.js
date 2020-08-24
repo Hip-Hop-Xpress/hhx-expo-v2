@@ -41,12 +41,13 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   name: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
     fontSize: 30,
+    fontWeight: "bold",
     color: 'lightgray',
   },
   date: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 18,
     color: 'lightgray',
   }
