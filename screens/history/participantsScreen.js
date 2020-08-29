@@ -51,7 +51,7 @@ const Participants = ({navigation}) => {
           <View style={styles.topImage}>
             {/* Text over top image */}
             <View style={styles.topView}>
-              <Text style={[styles.topText, globalStyles.transparent]}>{strings.participants.title}</Text>
+              <Text style={[styles.topText]}>{strings.participants.title}</Text>
             </View>
           </View>
 
@@ -82,19 +82,20 @@ const styles = StyleSheet.create({
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
-    height: 250,
   },
   topImage: {
-    height: 250,
+    height: 180,
     flex: 1,
   },
   topText: {
     fontFamily: Fonts.HEADER,
     fontWeight: 'bold',
     color: 'white',
-    padding: 15,
-    fontSize: 32,
+    padding: 30,
+    fontSize: 40,
     textAlign: 'center',
+    borderRadius: 20,
+    paddingTop: 40,
   },
   introText: {
     fontFamily: Fonts.SUBHEADER,
@@ -108,6 +109,7 @@ const styles = StyleSheet.create({
   body: {
     marginBottom: 40,
     paddingBottom: 40,
+    paddingTop: -10,
   },
   participantsListContainer: {
     flex: 1,
