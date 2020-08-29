@@ -48,15 +48,10 @@ const Participants = ({navigation}) => {
             }}
         />
         <ScrollView contentInsetAdjustmentBehavior="automatic">
-          <View>
-            {/* Top image */}
-            <Image
-              style={styles.topImage}
-              source={require('../../assets/images/hhx_team_blurred.jpg')}
-            />
+          <View style={styles.topImage}>
             {/* Text over top image */}
             <View style={styles.topView}>
-              <Text style={[styles.topText, globalStyles.illiniBlue]}>{strings.participants.title}</Text>
+              <Text style={[styles.topText, globalStyles.transparent]}>{strings.participants.title}</Text>
             </View>
           </View>
 
@@ -87,21 +82,24 @@ const styles = StyleSheet.create({
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
+    height: 250,
   },
   topImage: {
     height: 250,
     flex: 1,
   },
   topText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: 'bold',
     color: 'white',
     padding: 15,
     fontSize: 32,
     textAlign: 'center',
   },
   introText: {
-    fontFamily: Fonts.MONTSERRAT_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     textAlign: 'center',
+    color: 'white',
     marginVertical: 20,
     marginHorizontal: 10,
     fontSize: 22,

@@ -11,6 +11,7 @@ const VariationComponent = ({name, date, description, images, navigation}) => {
   return (
     <TouchableOpacity
       activeOpacity={0.75}
+      opacity = {1.0}
       onPress={
         // Send props to screen in stack
         () =>
