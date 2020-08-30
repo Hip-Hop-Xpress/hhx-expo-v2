@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { LinearGradient } from 'expo-linear-gradient';
+import React, { useState, useEffect } from "react";
+import { LinearGradient } from "expo-linear-gradient";
 
 import {
   SafeAreaView,
@@ -12,27 +12,27 @@ import {
   Dimensions,
   Platform,
   Linking,
-  TouchableOpacity
-} from 'react-native';
+  TouchableOpacity,
+} from "react-native";
 
 // Components
-import Header from '../components/header';
-import Updates from '../components/updatesList';
-import NavigationButton from '../components/navigationButton';
-import SocialMedia from '../components/socialMedia';
+import Header from "../components/header";
+import Updates from "../components/updatesList";
+import NavigationButton from "../components/navigationButton";
+import SocialMedia from "../components/socialMedia";
 
 // Text/data imports
-import strings from '../assets/strings';
-import assignData from '../api/assignData';
-import { ENDPOINTS } from '../api/endpoints';
-import PLATFORMS from '../api/constants/socialMedia';
+import strings from "../assets/strings";
+import assignData from "../api/assignData";
+import { ENDPOINTS } from "../api/endpoints";
+import PLATFORMS from "../api/constants/socialMedia";
 
 // Styles
-import globalStyles from '../styles/global';
-import * as Fonts from '../styles/fonts';
-import * as Colors from '../styles/colors';
+import globalStyles from "../styles/global";
+import * as Fonts from "../styles/fonts";
+import * as Colors from "../styles/colors";
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
   const [socialMediaInfo, setSocialMedInfo] = useState([]);
 
   useEffect(() => {
@@ -45,21 +45,21 @@ const Home = ({navigation}) => {
       <StatusBar barStyle="light-content" />
       <SafeAreaView style={globalStyles.lightBlue}>
         <LinearGradient
-            // Background Linear Gradient
-            colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
-            style={{
-              position: 'absolute',
-              left: 0,
-              right: 0,
-              top: 0,
-              height: 1000,
-            }}
+          // Background Linear Gradient
+          colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: 0,
+            height: 1000,
+          }}
         />
         <Header />
         <ScrollView contentInsetAdjustmentBehavior="automatic">
           <View>
-              <Text style={styles.topIntroText}>{strings.home.upperTitle}</Text>
-              <Text style={styles.topTitleText}>{strings.home.lowerTitle}</Text>
+            <Text style={styles.topIntroText}>{strings.home.upperTitle}</Text>
+            <Text style={styles.topTitleText}>{strings.home.lowerTitle}</Text>
           </View>
 
           {/* Body of Home Screen */}
@@ -92,28 +92,28 @@ const Home = ({navigation}) => {
               <NavigationButton
                 navigation={navigation}
                 title={strings.courses.title}
-                screenName={'Courses'}
+                screenName={"Courses"}
               />
 
               {/* Participants Navigation */}
               <NavigationButton
                 navigation={navigation}
                 title={strings.participants.title}
-                screenName={'Participants'} 
+                screenName={"Participants"}
               />
 
               {/* Artist Histories Navigation */}
               <NavigationButton
                 navigation={navigation}
                 title={strings.artistHistories.title}
-                screenName={'Artist Histories'}
+                screenName={"Artist Histories"}
               />
 
               {/* Variations on the HHX Navigation */}
-              <NavigationButton 
+              <NavigationButton
                 navigation={navigation}
                 title={strings.variations.title}
-                screenName={strings.variations.screenName}  
+                screenName={strings.variations.screenName}
               />
             </View>
 
@@ -123,7 +123,7 @@ const Home = ({navigation}) => {
             </View>
 
             {/* Contact */}
-            <View style={{...globalStyles.sectionContainer, marginTop: 20}}>
+            <View style={{ ...globalStyles.sectionContainer, marginTop: 20 }}>
               <Text style={globalStyles.sectionTitle}>
                 {strings.home.contact.title}
               </Text>
@@ -134,10 +134,12 @@ const Home = ({navigation}) => {
                 style={[globalStyles.button, globalStyles.transparent]}
                 activeOpacity={0.8}
                 onPress={() => {
-                  Linking.openURL(strings.home.contact.contactUrl)
+                  Linking.openURL(strings.home.contact.contactUrl);
                 }}
               >
-                <Text style={globalStyles.buttonText}>Sign up to contact</Text>
+                <Text style={globalStyles.buttonText}>
+                  {strings.home.contact.buttonTitle}
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -145,28 +147,28 @@ const Home = ({navigation}) => {
       </SafeAreaView>
     </>
   );
-}
+};
 
-const screen = Dimensions.get('screen');
+const screen = Dimensions.get("screen");
 
 const styles = StyleSheet.create({
   header: {
     backgroundColor: Colors.LIGHT_BLUE,
   },
   topImage: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     bottom: 0,
     left: 0,
     right: 0,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   topIntroText: {
     paddingTop: 40,
     color: Colors.WHITE,
     fontSize: 20,
-    textAlign: 'center',
+    textAlign: "center",
     fontFamily: Fonts.SUBHEADER,
   },
   topTitleText: {
@@ -174,9 +176,9 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     color: Colors.WHITE,
     fontSize: 40,
-    textAlign: 'center',
+    textAlign: "center",
     fontFamily: Fonts.HEADER,
-    fontWeight: Platform.OS === 'ios' ? '900' : 'bold',
+    fontWeight: Platform.OS === "ios" ? "900" : "bold",
   },
   body: {
     paddingVertical: 20,
