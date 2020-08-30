@@ -94,7 +94,6 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.SUBHEADER,
     textAlign: 'center',
     color: 'white',
-    //marginVertical: 5,
     marginHorizontal: 10,
     fontSize: 22,
     marginBottom: 35,

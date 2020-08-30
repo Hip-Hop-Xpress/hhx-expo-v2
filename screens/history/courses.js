@@ -36,12 +36,18 @@ const Courses = () => {
   const processCoursesData = (coursesData) => {
     // Map each course's data to the schema required for Timeline
     const processedData = coursesData.map((course) => {
+
+      course.startDate === 'Summer 2018'
+          ? course.endDate = course.startDate = 'Summer\n2018'
+          : ''
+      
       return {
         time: course.startDate + (
-          course.endDate === null || course.endDate === course.startDate 
-            ? '' 
+          course.endDate === null || course.endDate === course.startDate
+            ? ''
             : '\n' + course.endDate
         ),
+
         title: course.name,
         description: course.description.reduce((bodyString, paragraph) => {
           return bodyString + '\n' + paragraph
