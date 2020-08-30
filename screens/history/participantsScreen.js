@@ -48,12 +48,10 @@ const Participants = ({navigation}) => {
             }}
         />
         <ScrollView contentInsetAdjustmentBehavior="automatic">
-          <View style={styles.topImage}>
             {/* Text over top image */}
             <View style={styles.topView}>
               <Text style={[styles.topText]}>{strings.participants.title}</Text>
             </View>
-          </View>
 
           {/* Body */}
           <View style={[styles.body]}>
@@ -75,11 +73,6 @@ const Participants = ({navigation}) => {
 
 const styles = StyleSheet.create({
   topView: {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -91,8 +84,8 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.HEADER,
     fontWeight: 'bold',
     color: 'white',
-    padding: 30,
-    fontSize: 40,
+    padding: 15,
+    fontSize: 32,
     textAlign: 'center',
     borderRadius: 20,
     paddingTop: 40,
@@ -101,15 +94,14 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.SUBHEADER,
     textAlign: 'center',
     color: 'white',
-    marginVertical: 20,
+    //marginVertical: 5,
     marginHorizontal: 10,
     fontSize: 22,
-    marginBottom: 30,
+    marginBottom: 35,
   },
   body: {
     marginBottom: 40,
     paddingBottom: 40,
-    paddingTop: -10,
   },
   participantsListContainer: {
     flex: 1,

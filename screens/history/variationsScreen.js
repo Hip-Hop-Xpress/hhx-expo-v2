@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.HEADER,
     fontWeight: "bold",
     color: 'white',
-    padding: 15,
+    paddingTop: 15,
     fontSize: 32,
     textAlign: 'center',
   },
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   variationsContainer: {
-    paddingVertical: 30,
+    paddingVertical: 10,
   },
 });
 
