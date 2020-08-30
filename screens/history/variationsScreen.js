@@ -73,14 +73,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
+    fontWeight: "bold",
     color: 'white',
-    padding: 15,
+    paddingTop: 15,
     fontSize: 32,
     textAlign: 'center',
   },
   subtitle: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     color: 'white',
     fontSize: 23,
     padding: 15,
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   variationsContainer: {
-    paddingVertical: 30,
+    paddingVertical: 10,
   },
 });
 

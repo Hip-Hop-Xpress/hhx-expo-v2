@@ -11,6 +11,7 @@ const VariationComponent = ({name, date, description, images, navigation}) => {
   return (
     <TouchableOpacity
       activeOpacity={0.75}
+      opacity = {1.0}
       onPress={
         // Send props to screen in stack
         () =>
@@ -41,12 +42,13 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   name: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
     fontSize: 30,
+    fontWeight: "bold",
     color: 'lightgray',
   },
   date: {
-    fontFamily: Fonts.KARLA_REGULAR,
+    fontFamily: Fonts.SUBHEADER,
     fontSize: 18,
     color: 'lightgray',
   }
