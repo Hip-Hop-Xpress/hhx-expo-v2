@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { LinearGradient } from 'expo-linear-gradient';
 import {
   SafeAreaView,
   StyleSheet,
@@ -20,6 +21,7 @@ import COURSES_DATA from '../../api/constants/coursesData';
 // Styles
 import globalStyles from '../../styles/global';
 import * as Fonts from '../../styles/fonts';
+import * as Colors from '../../styles/colors';
 import { ILLINI_BLUE, ILLINI_ORANGE } from '../../styles/colors';
 
 /**
@@ -67,24 +69,36 @@ const Courses = () => {
   return (
     <>
       <StatusBar barStyle="light-content" />
-      <SafeAreaView style={globalStyles.illiniBlue}>
+      <SafeAreaView>
+      <LinearGradient
+            // Background Linear Gradient
+            colors={Colors.LIGHT_MEDIUM_BLUE_GRADIENT}
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: 0,
+              height: 1000,
+            }}
+        />
         <ScrollView contentInsetAdjustmentBehavior="automatic">
 
           {/* Text over top image */}
           <View style={styles.topView}>
-            <Text style={[styles.topText, globalStyles.illiniBlue]}>{strings.courses.title}</Text>
+            <Text style={[styles.topText]}>{strings.courses.title}</Text>
           </View>
 
           {/* Body */}
           <View style={styles.body}>
+          <Text style={styles.introText}>{strings.courses.subtitle}</Text>
             {coursesData.length === 0 && <LoadingIcon />}
             <Timeline 
               style={styles.list}
               data={coursesData}
               separator={true}
               circleSize={20}
-              circleColor={ILLINI_BLUE}
-              lineColor={ILLINI_BLUE}
+              circleColor={'white'}
+              lineColor={'white'}
               timeContainerStyle={{minWidth:95, marginTop: 0}}
               timeStyle={styles.timeStyle}
               options={{
@@ -101,11 +115,14 @@ const Courses = () => {
 
 const styles = StyleSheet.create({
   topText: {
-    fontFamily: 'Montserrat-Black',
+    fontFamily: Fonts.HEADER,
     color: 'white',
+    fontWeight: 'bold',
     padding: 15,
     fontSize: 32,
     textAlign: 'center',
+    paddingTop: 40,
+
   },
   topView: {
     justifyContent: 'center',
@@ -116,25 +133,33 @@ const styles = StyleSheet.create({
     marginTop:20,
   },
   titleText: {
-    fontFamily: Fonts.MONTSERRAT_BLACK,
+    fontFamily: Fonts.HEADER,
     marginTop: 5,
     marginBottom: 10,
     fontSize: 32,
     textAlign: 'center',
   },
   body: {
-    backgroundColor: 'white',
     marginBottom: 40,
     paddingBottom: 40,
     padding: 20,
   },
   timeStyle: {
     textAlign: 'center', 
-    backgroundColor: ILLINI_ORANGE, 
+    backgroundColor: Colors.MEDIUM_BLUE, 
     color: 'white', 
     padding: 5, 
     borderRadius: 13,
-    overflow: 'hidden'
+    overflow: 'hidden',
+  },
+  introText: {
+    fontFamily: Fonts.SUBHEADER,
+    textAlign: 'center',
+    color: 'white',
+    marginHorizontal: 10,
+    fontSize: 22,
+    marginBottom: 35,
+    fontWeight: 'normal',
   },
 });
 
