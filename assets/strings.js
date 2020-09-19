@@ -48,8 +48,8 @@ const strings = {
     request: 'Want to bring the bus to your community? Contact us!',
   },
   courses: {
-    title: 'Past Courses and Camps',
-    subtitle: 'Past Courses and Camps',
+    title: 'Past Courses \nand Camps',
+    subtitle: 'Take a look at what we\'ve been up to throughout the years!',
     screenName: 'Courses',
   },
   artistHistories: {

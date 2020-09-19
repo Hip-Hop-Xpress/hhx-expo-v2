@@ -34,7 +34,7 @@ const COURSES_DATA = [
     circleColor: ILLINI_BLUE
   },
   {
-    time: 'Summer \n2018', 
+    time: 'Summer\n2018', 
     title: 'Hip-Hop at Illinois Summer Youth Music (ISYM) Camp', 
     description: 'Directed by Dr. Adam Kruse, the ISYM Hip-Hop Camp engaged middle and high school students in individual and collaborative creation and performance of original music in a variety of roles and styles. Campers worked in lab, studio, and workshop settings alongside experienced educators and musicians to produce beats, write and record lyrics, and prepared for a live performance at the end of the week. Supplemental activities explored additional elements and foundations of hip-hop culture. ', 
     circleColor: ILLINI_BLUE
