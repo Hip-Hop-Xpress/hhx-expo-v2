@@ -12,9 +12,10 @@ export const componentStyles = StyleSheet.create({
     //paddingVertical: 20,
     borderRadius: 20,
     justifyContent: 'center',
+    paddingTop: 450,
     margin: 50,
     alignItems: 'center',
-  
+    //textAlign: 'justify',  
   },
   title: {
     fontFamily: Fonts.HEADER,
@@ -25,6 +26,7 @@ export const componentStyles = StyleSheet.create({
     color: 'white',
     //marginBottom: 10,
     justifyContent: 'center',
+    textAlign: 'center',
   },
   subtitle: {
     fontFamily: Fonts.KARLA_BOLDITALIC,

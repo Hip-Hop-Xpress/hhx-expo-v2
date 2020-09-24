@@ -6,6 +6,8 @@ import globalStyles from '../styles/global';
 import {componentStyles} from '../styles/historyStyles';
 import * as Fonts from '../styles/fonts';
 
+//import HistoryImages from '../../components/historyImages';
+
 /**
  * Clickable component navigating to individual screen
  * Used in History screens
