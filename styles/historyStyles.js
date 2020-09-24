@@ -7,13 +7,13 @@ const height = screen.height;
 export const componentStyles = StyleSheet.create({
   container: {
     width: width-50,
-    height: height / 6,
+    height: height / 1.6,
     marginVertical: 5,
-    paddingHorizontal: 10,
     //paddingVertical: 20,
-    alignItems: 'center',
     borderRadius: 20,
     justifyContent: 'center',
+    margin: 50,
+  
   },
   title: {
     fontFamily: Fonts.HEADER,
