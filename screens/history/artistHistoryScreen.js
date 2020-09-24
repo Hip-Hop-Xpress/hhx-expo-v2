@@ -53,7 +53,7 @@ export default function ArtistHistories(props) {
             {/* Subtitle */}
             <Text style={styles.introText}>{strings.artistHistories.subtitle}</Text>
 
-            <ScrollView contentInsetAdjustmentBehavior='automatic' horizontal="true">
+            <ScrollView horizontal>
             {/* Artist History Components Components */}
               <View style={styles.artistHistoriesListContainer}>
                 <ArtistHistoriesList navigation={props.navigation}/>
