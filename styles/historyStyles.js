@@ -5,28 +5,42 @@ const screen = Dimensions.get('screen');
 const width = screen.width;
 const height = screen.height;
 export const componentStyles = StyleSheet.create({
-  container: {
+  artistContainer: {
     width: width-50,
     height: height / 1.6,
     marginVertical: 5,
     //paddingVertical: 20,
     borderRadius: 20,
     justifyContent: 'center',
-    paddingTop: 450,
+    //paddingTop: 450,
     margin: 50,
     alignItems: 'center',
-    //textAlign: 'justify',  
+    //textAlign: 'justify', 
+  },
+  container: {
+    width: width-50,
+    height: height / 6,
+    marginVertical: 5,
+    paddingHorizontal: 10,
+    //paddingVertical: 20,
+    alignItems: 'center',
+    borderRadius: 20,
+    justifyContent: 'center', 
   },
   title: {
     fontFamily: Fonts.HEADER,
     fontWeight: 'bold',
     fontSize: 40,
-    textAlign: 'left',
-    //textAlignVertical: "bottom",
+    // textAlign: 'left',
+    // textAlignVertical: "bottom",
     color: 'white',
-    //marginBottom: 10,
-    justifyContent: 'center',
+    // justifyContent: 'center',
     textAlign: 'center',
+    position: 'absolute',
+    width: width - 50,
+    // alignContent: 'center',
+    marginHorizontal: 50,
+    marginTop: 500,
   },
   subtitle: {
     fontFamily: Fonts.KARLA_BOLDITALIC,
@@ -59,6 +73,16 @@ export const imageStyles = StyleSheet.create({
     color: 'lightgray',
     fontFamily: Fonts.KARLA_BOLDITALIC,
   },
+  card: {
+    width: width-50,
+    height: height / 1.6,
+    borderRadius: 20,
+    justifyContent: 'center',
+    margin: 50,
+    alignItems: 'center',
+    borderTopLeftRadius: 20,
+    //paddingTop: 20,
+  }
 });
 
 export const descriptionStyles = StyleSheet.create({

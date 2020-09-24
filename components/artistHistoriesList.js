@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import HistoryComponent from './historyComponent';
+import ArtistHistoryComponent from './artistHistoryComponent';
 import LoadingIcon from './loadingIcon';
 
 import ARTIST_HISTORIES from '../api/constants/artistHistories';
@@ -25,7 +25,7 @@ const ArtistHistoriesList = props => {
   let key = 0;
 
   const ArtistHistories = historicArtists.map(artistHistory => (
-    <HistoryComponent
+    <ArtistHistoryComponent
       title={artistHistory.name}
       paragraphs={artistHistory.description}
       images={artistHistory.images}

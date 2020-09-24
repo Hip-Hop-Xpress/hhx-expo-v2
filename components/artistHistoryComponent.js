@@ -3,7 +3,7 @@ import {StyleSheet, View, Text, TouchableOpacity, Dimensions, Image} from 'react
 
 import strings from '../assets/strings';
 import globalStyles from '../styles/global';
-import {componentStyles} from '../styles/historyStyles';
+import {componentStyles, imageStyles} from '../styles/historyStyles';
 import * as Fonts from '../styles/fonts';
 
 //import HistoryImages from '../../components/historyImages';
@@ -18,7 +18,7 @@ import * as Fonts from '../styles/fonts';
  * @param {string} screenName name of screen in stack to navigate to
  * @param {Object} navigation navigation object from StackNavigation
  */
-const HistoryComponent = ({title, paragraphs, images, screenName, navigation}) => {
+const ArtistHistoryComponent = ({title, paragraphs, images, screenName, navigation}) => {
   const component = (
     <TouchableOpacity
       activeOpacity={0.75}
@@ -31,13 +31,17 @@ const HistoryComponent = ({title, paragraphs, images, screenName, navigation}) =
             images: images,
           })
       }>
-      <View style={[componentStyles.container, globalStyles.transparent]}>
-        <Text style={componentStyles.title}>{title}</Text>
+      <View style={[componentStyles.artistContainer, globalStyles.transparent]}>
+        <Image
+            style={imageStyles.card}
+            source={images}
+        />
       </View>
+          <Text style={componentStyles.title}>{title}</Text>
     </TouchableOpacity>
   );
 
   return component;
 };
 
-export default HistoryComponent;
+export default ArtistHistoryComponent;
