@@ -99,10 +99,10 @@ const styles = StyleSheet.create({
   },
   artistHistoriesListContainer: {
     flexDirection: 'row',
-    alignContent: 'flex-end',
+    alignContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 10,
     justifyContent: 'center',
-    display: 'flex',
+    flexWrap: 'wrap',
+    marginHorizontal: -25,
   },
 });
