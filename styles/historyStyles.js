@@ -13,6 +13,7 @@ export const componentStyles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: 'center',
     margin: 50,
+    alignItems: 'center',
   
   },
   title: {
